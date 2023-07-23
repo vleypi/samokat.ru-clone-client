@@ -1,87 +1,11 @@
 import Image from 'next/image'
+import Link from 'next/link'
+
 
 export default function Home() {
   return (
     <div>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      <p>dsadasda</p>
-      
+        <Link href={'/auth'}>auth link</Link>
     </div>
   )
 }
