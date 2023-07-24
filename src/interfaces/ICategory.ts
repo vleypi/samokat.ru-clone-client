@@ -4,7 +4,8 @@ export interface ICategory {
     options: [
         {
             label: string;
-            slug: string
+            slug: string;
+            image: string;
         }
     ]
 }
