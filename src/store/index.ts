@@ -11,9 +11,8 @@ type UseCategories = {
 export const useCategories = create<UseCategories>()(devtools(
     (set)=>({
         categories: [],
-        loading: false,
+        loading: true,
         getAllCategories: async () => {
-            set({loading: true})
             const categories = await getAllCategories()
             set({categories, loading: false})
         },

@@ -27,14 +27,14 @@ export default function RootLayout({
                 <Sidebar />
             </Box>
             <Box className='w-full overflow-y-auto py-6'> 
-                  <Search />
-                  <main className='overflow-y-auto rounded-3xl bg-white'>
+                  <main className='overflow-y-auto rounded-3xl bg-white p-4'>
+                    <Search />
                     {children}
                   </main>
             </Box>
-            <Box className=' hidden md:flex flex-col w-[350px] px-6 pb-6'>
+            {/* <Box className=' hidden md:flex flex-col w-[350px] px-6 pb-6'>
                 <Sidebar />
-            </Box>
+            </Box> */}
       </body>
     </html>
   )

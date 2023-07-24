@@ -1,8 +1,11 @@
-import React from 'react'
+import {BiSearch} from 'react-icons/bi'
 
 const Search = () => {
     return (
-        <div className='rounded-3xl bg-white mb-6'>Search</div>
+        <div className='flex items-center  w-full bg-[#f2f2f2] py-3 px-4 rounded-3xl mb-4'>
+            <BiSearch size={18} className={''}/>
+            <input placeholder='Искать в Самокате' className='w-full outline-none text-[14px] pl-[7px] font-bold bg-transparent' maxLength={100} type='search'/>
+        </div>
     )
 }
 
