@@ -4,8 +4,7 @@ import { Inter } from 'next/font/google'
 import Box from '@/components/Box'
 import Sidebar from '@/components/Sidebar/Sidebar'
 import Search from '@/components/Search/Search'
-
-
+import AuthProvider from '@/components/Provider/AuthProvider'
 
 const font = Inter({ subsets: ['latin'] })
 
@@ -23,18 +22,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${font.className} flex h-full`}>
-            <Box className='hidden md:flex flex-col  w-[350px] px-6 pb-6'>
-                <Sidebar />
-            </Box>
-            <Box className='w-full overflow-y-auto py-6'> 
-                  <main className='overflow-y-auto rounded-3xl bg-white p-4'>
-                    <Search />
-                    {children}
-                  </main>
-            </Box>
-            {/* <Box className=' hidden md:flex flex-col w-[350px] px-6 pb-6'>
-                <Sidebar />
-            </Box> */}
+          <AuthProvider>
+              <Box className='hidden md:flex flex-col  w-[350px] px-6 pb-6'>
+                  <Sidebar />
+              </Box>
+              <Box className='w-full overflow-y-auto py-6'> 
+                    <main className='overflow-y-auto rounded-3xl bg-white p-4'>
+                      <Search />
+                      {children}
+                    </main>
+              </Box>
+              {/* <Box className=' hidden md:flex flex-col w-[350px] px-6 pb-6'>
+                  <Sidebar />
+              </Box> */}
+          </AuthProvider>
       </body>
     </html>
   )

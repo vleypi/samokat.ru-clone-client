@@ -1,15 +1,19 @@
-import { getAllCategories } from '@/services/getCategories'
+import { getAllCategories } from '@/services/categories.service'
 import Link from 'next/link'
+import { AppContext } from 'next/app'
 
-const getCategories = async () =>{
+const getCategories = async (ctx: AppContext) =>{
+
     const data = await getAllCategories()
+
+    console.log(ctx)
 
     return data
 }
 
-const Home = async () => {
+const Home = async (ctx: AppContext) => {
 
-    const categories = await getCategories()
+    const categories = await getCategories(ctx)
 
     return (
         <div>
